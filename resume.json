@@ -1,0 +1,143 @@
+{
+	"basics": {
+		"name": "Sérgio Paulo Ferreira Gomes",
+		"label": "Web Developer",
+		"picture": "",
+		"email": "sergiopgomes92@gmail.com",
+		"phone": "+55 (31) 98733-9600",
+		"website": "https://www.behance.net/sergiopgomdf7c",
+		"summary": "Acting in the area of information systems, where the application and use of knowledge are requirements and can be used to aggregate values both for the company and for personal and professional development.",
+		"location": {
+			"address": "135 Americo Campolina Rezende St",
+			"postalCode": "MG 31910-385",
+			"city": "Belo Horizonte",
+			"countryCode": "BR",
+			"region": "Fernão Dias"
+		},
+		"profiles": [{
+				"network": "Twitter",
+				"username": "Sergio_Pow",
+				"url": "https://twitter.com/Sergio_Pow"
+			},
+			{
+				"network": "Facebook",
+				"username": "sergiopow.gomes",
+				"url": "https://www.facebook.com/sergiopow.gomes"
+			},
+			{
+				"network": "Instagram",
+				"username": "sergio_pow",
+				"url": "https://www.instagram.com/sergio_pow/"
+			},
+			{
+				"network": "Github",
+				"username": "sergiogomes",
+				"url": "https://github.com/sergiogomes"
+			}
+		]
+	},
+	"work": [{
+		"company": "Odhen Teknisa Group",
+		"position": "Team Manager",
+		"website": "http://ead.odhen.com/",
+		"startDate": "2017-12-05",
+		"summary": ".",
+		"highlights": [
+			""
+		]
+	}, {
+		"company": "Pebbian Teknisa Group",
+		"position": "Systems Analyst",
+		"website": "http://ead.pebbian.com/",
+		"startDate": "2016-08-01",
+		"endDate": "2017-12-05",
+		"summary": "",
+		"highlights": [
+			""
+		]
+	}, {
+		"company": "Teknisa Software",
+		"position": "Programmer",
+		"website": "https://www.teknisa.com/",
+		"startDate": "2011-08-05",
+		"endDate": "2016-08-01",
+		"summary": "I have worked in a delphi development environment on some client and server building and converting queries and procedures on Oracle and SQL server.",
+		"highlights": [
+			"Delphi environment",
+			"Oracle and SQL Server",
+			"Support",
+			"Bug fixes",
+			"Implementations",
+			"Customizations"
+		]
+	}],
+	"education": [{
+			"institution": "Newton Paiva University",
+			"area": "MBA Project Management",
+			"studyType": "MBA",
+			"startDate": "2014-02-01",
+			"endDate": "2015-06-25",
+			"gpa": "4.0",
+			"courses": []
+		},
+		{
+			"institution": "Newton Paiva University",
+			"area": "Information Technology",
+			"studyType": "Bachelor",
+			"startDate": "2010-02-12",
+			"endDate": "2013-12-31",
+			"gpa": "4.0",
+			"courses": []
+		}
+	],
+	"publications": [{
+		"name": "Oracle and SQL Server stored procedures",
+		"publisher": "Newton Paiva",
+		"releaseDate": "2013-10-01",
+		"website": "",
+		"summary": "The advantages and disadvantages of having the business rule of the application in stored procedures, in the database, and the differences between Oracle and SQL Server."
+	}],
+	"skills": [{
+			"name": "Web Development",
+			"level": "Advanced",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"Javascript"
+			]
+		},
+		{
+			"name": "Data Base",
+			"level": "Intermediate",
+			"keywords": [
+				"Oracle",
+				"SQL Server",
+				"Postgre"
+			]
+		}
+	],
+	"languages": [{
+			"language": "Portuguese",
+			"fluency": "Native speaker"
+		},
+		{
+			"language": "English",
+			"fluency": "Advanced"
+		},
+		{
+			"language": "Spanish",
+			"fluency": "Beginner"
+		}
+	],
+	"interests": [{
+		"name": "Wildlife",
+		"keywords": [
+			"Ferrets",
+			"Unicorns"
+		]
+	}],
+	"references": [{
+		"name": "Erlich Bachman",
+		"reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+	}]
+}
