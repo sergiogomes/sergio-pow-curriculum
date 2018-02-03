@@ -1,139 +1,206 @@
 {
-	"basics": {
-		"name": "Sérgio Paulo Ferreira Gomes",
-		"label": "Web Developer",
-		"picture": "",
-		"email": "sergiopgomes92@gmail.com",
-		"phone": "+55 (31) 98733-9600",
-		"website": "https://www.behance.net/sergiopgomdf7c",
-		"summary": "Acting in the area of information systems, where the application and use of knowledge are requirements and can be used to aggregate values both for the company and for personal and professional development.",
-		"location": {
-			"address": "135 Americo Campolina Rezende St",
-			"postalCode": "MG 31910-385",
-			"city": "Belo Horizonte",
-			"countryCode": "BR",
-			"region": "Fernão Dias"
+    "basics": {
+        "name": "Sérgio Paulo Ferreira Gomes",
+        "label": "Web Developer",
+        "picture": "",
+        "email": "sergiopgomes92@gmail.com",
+        "phone": "+55 (31) 98733-9600",
+        "website": "https://www.behance.net/sergiopgomdf7c",
+        "summary": "Acting in the area of information systems, where the application and use of knowledge are requirements and can be used to aggregate values both for the company and for personal and professional development.",
+        "location": {
+            "address": "135 Americo Campolina Rezende St",
+            "postalCode": "MG 31910-385",
+            "city": "Belo Horizonte",
+            "countryCode": "55",
+            "region": "Fernão Dias"
+        },
+        "profiles": [{
+                "network": "Twitter",
+                "username": "Sergio_Pow",
+                "url": "https://twitter.com/Sergio_Pow"
+            },
+            {
+                "network": "Facebook",
+                "username": "sergiopow.gomes",
+                "url": "https://www.facebook.com/sergiopow.gomes"
+            },
+            {
+                "network": "Instagram",
+                "username": "sergio_pow",
+                "url": "https://www.instagram.com/sergio_pow/"
+            },
+            {
+                "network": "Github",
+                "username": "sergiogomes",
+                "url": "https://github.com/sergiogomes"
+            },
+            {
+                "network": "linkedin",
+                "username": "Sérgio Pow Gomes",
+                "url": "https://www.linkedin.com/in/s%C3%A9rgio-pow-gomes-09484b7b/"
+            }
+        ]
+    },
+    "work": [{
+            "company": "Odhen",
+            "position": "Team Manager",
+            "website": "http://ead.odhen.com/",
+            "startDate": "2017-12-05",
+            "endDate": "",
+            "summary": "We are creating a new department, and it is part of my job to maintain the climate and the pleasant environment, enabling a good development of the new systems. I take care of the management of all personnel, equipment, tools, and division of tasks within the sprints. The system itself is built on the Zeedhi framework, with integrations with python printers, Oracle database, PostgreSQL and MongoDB, and rows in Apollo.",
+            "highlights": [
+                "Zeedhi Framework",
+                "JS",
+                "PHP",
+                "SH scripts",
+				"GitLab",
+				"Oracle",
+				"PostgreSQL",
+				"MongoDB",
+				"Python",
+				"Apollo"
+            ]
 		},
-		"profiles": [{
-				"network": "Twitter",
-				"username": "Sergio_Pow",
-				"url": "https://twitter.com/Sergio_Pow"
-			},
-			{
-				"network": "Facebook",
-				"username": "sergiopow.gomes",
-				"url": "https://www.facebook.com/sergiopow.gomes"
-			},
-			{
-				"network": "Instagram",
-				"username": "sergio_pow",
-				"url": "https://www.instagram.com/sergio_pow/"
-			},
-			{
-				"network": "Github",
-				"username": "sergiogomes",
-				"url": "https://github.com/sergiogomes"
-			}
-		]
-	},
-	"work": [{
-		"company": "Odhen Teknisa Group",
-		"position": "Team Manager",
-		"website": "http://ead.odhen.com/",
-		"startDate": "2017-12-05",
-		"summary": ".",
-		"highlights": [
-			""
-		]
-	}, {
-		"company": "Pebbian Teknisa Group",
-		"position": "Systems Analyst",
-		"website": "http://ead.pebbian.com/",
-		"startDate": "2016-08-01",
-		"endDate": "2017-12-05",
-		"summary": "",
-		"highlights": [
-			""
-		]
-	}, {
-		"company": "Teknisa Software",
-		"position": "Programmer",
-		"website": "https://www.teknisa.com/",
-		"startDate": "2011-08-05",
-		"endDate": "2016-08-01",
-		"summary": "I have worked in a delphi development environment on some client and server building and converting queries and procedures on Oracle and SQL server.",
-		"highlights": [
-			"Delphi environment",
-			"Oracle and SQL Server",
-			"Support",
-			"Bug fixes",
-			"Implementations",
-			"Customizations"
-		]
-	}],
-	"education": [{
-			"institution": "Newton Paiva University",
-			"area": "MBA Project Management",
-			"studyType": "MBA",
-			"startDate": "2014-02-01",
-			"endDate": "2015-06-25",
-			"gpa": "4.0",
-			"courses": []
+        {
+            "company": "Pebbian",
+            "position": "Systems Analyst",
+            "website": "http://ead.pebbian.com/",
+            "startDate": "2016-08-01",
+            "endDate": "2017-12-05",
+            "summary": "I lead a team of developers in converting delphi systems to the new web platform built on the Zeedhi framework. I was responsible for all the management of tasks and resources. We've also posted some apps on the Apple Store and Google Play.",
+            "highlights": [
+                "Zeedhi Framework",
+                "JS",
+                "PHP",
+                "Apple Store",
+                "Google Play",
+                "WebView",
+				"ERP Conversion System",
+				"Oracle"
+            ]
 		},
 		{
-			"institution": "Newton Paiva University",
-			"area": "Information Technology",
-			"studyType": "Bachelor",
-			"startDate": "2010-02-12",
-			"endDate": "2013-12-31",
-			"gpa": "4.0",
-			"courses": []
-		}
-	],
-	"publications": [{
-		"name": "Oracle and SQL Server stored procedures",
-		"publisher": "Newton Paiva",
-		"releaseDate": "2013-10-01",
-		"website": "",
-		"summary": "The advantages and disadvantages of having the business rule of the application in stored procedures, in the database, and the differences between Oracle and SQL Server."
-	}],
-	"skills": [{
-			"name": "Web Development",
-			"level": "Advanced",
-			"keywords": [
+            "company": "CASUL",
+            "position": "Co Founder",
+            "website": "https://casuldev.com/",
+            "startDate": "2014-06-28",
+            "endDate": "",
+            "summary": "CASUL was created by a group of friends interested in the development high quality projects: 'Simplifying your idea is our business! Games and Softwares made with excellence and high quality that only CASUL can deliver!'",
+            "highlights": [
+                "Unreal Engine",
+                "Unity",
+                "Phaser",
+				"AWS",
 				"HTML",
 				"CSS",
-				"Javascript"
-			]
-		},
-		{
-			"name": "Data Base",
-			"level": "Intermediate",
-			"keywords": [
+				"JS",
+                "Vue JS Framework",
+				"BitBucket",
+				"GitHub"
+            ]
+        },
+        {
+            "company": "Teknisa Software",
+            "position": "Programmer",
+            "website": "https://www.teknisa.com/",
+            "startDate": "2011-08-05",
+            "endDate": "2016-08-01",
+            "summary": "I have worked in a delphi development environment building several client-server applications and building and converting queries and procedures on Oracle and SQL server. I also had to give suport and bug fixes to the applications. Improve it and customize it for some clients, wich interview and requirements gathering was needed.",
+            "highlights": [
+                "Delphi environment",
 				"Oracle",
 				"SQL Server",
-				"Postgre"
-			]
-		}
-	],
-	"languages": [{
-			"language": "Portuguese",
-			"fluency": "Native speaker"
-		},
-		{
-			"language": "English",
-			"fluency": "Advanced"
-		},
-		{
-			"language": "Spanish",
-			"fluency": "Beginner"
-		}
-	],
+                "Support",
+                "Bug fixes",
+                "Implementations",
+                "Customizations",
+                "Requirements Gathering"
+            ]
+        }
+    ],
+    "volunteer": [],
+    "education": [{
+            "institution": "Newton Paiva University",
+            "area": "MBA Project Management",
+            "studyType": "MBA",
+            "startDate": "2014-02-01",
+            "endDate": "2015-06-25",
+            "gpa": "",
+            "courses": []
+        },
+        {
+            "institution": "Newton Paiva University",
+            "area": "Information Technology",
+            "studyType": "Bachelor",
+            "startDate": "2010-02-12",
+            "endDate": "2013-12-31",
+            "gpa": "",
+            "courses": []
+        }
+    ],
+    "awards": [],
+    "publications": [{
+        "name": "Oracle and SQL Server stored procedures",
+        "publisher": "Newton Paiva",
+        "releaseDate": "2013-10-01",
+        "website": "",
+        "summary": "The advantages and disadvantages of having the business rule of the application in stored procedures, in the database, and the differences between Oracle and SQL Server."
+    }],
+    "skills": [{
+            "name": "Web Development",
+            "level": "Advanced",
+            "keywords": [
+                "HTML",
+                "CSS",
+				"JS",
+				"PHP",
+				"AWS"
+            ]
+        },
+        {
+            "name": "Data Base",
+            "level": "Intermediate",
+            "keywords": [
+                "Oracle",
+                "SQL Server",
+                "PostgreSQL",
+                "MongoDB"
+            ]
+        }
+    ],
+    "languages": [{
+            "language": "Portuguese",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Advanced"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Beginner"
+        }
+    ],
 	"interests": [{
-		"name": "Wildlife",
+		"name": "Games",
 		"keywords": [
-			"Ferrets",
-			"Unicorns"
+			"Unreal Engine",
+			"Unity"
+		]
+	},
+	{
+		"name": "Music",
+		"keywords": [
+			"Protools",
+			"CuBase"
+		]
+	},
+	{
+		"name": "JS Frameworks",
+		"keywords": [
+			"Angular",
+			"React",
+			"Vue"
 		]
 	}],
 	"references": [{
