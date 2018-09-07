@@ -53,11 +53,12 @@
                 "JS",
                 "PHP",
                 "SH scripts",
+				"GitLab",
 				"Oracle",
 				"PostgreSQL",
 				"MongoDB",
 				"Python",
-				"Apollo Queue"
+				"Apollo"
             ]
 		},
         {
@@ -71,6 +72,9 @@
                 "Zeedhi Framework",
                 "JS",
                 "PHP",
+                "Apple Store",
+                "Google Play",
+                "WebView",
 				"ERP Conversion System",
 				"Oracle"
             ]
@@ -86,7 +90,13 @@
                 "Unreal Engine",
                 "Unity",
                 "Phaser",
-				"JS"
+				"AWS",
+				"HTML",
+				"CSS",
+				"JS",
+                "Vue JS Framework",
+				"BitBucket",
+				"GitHub"
             ]
         },
         {
@@ -137,37 +147,24 @@
         "summary": "The advantages and disadvantages of having the business rule of the application in stored procedures, in the database, and the differences between Oracle and SQL Server."
     }],
     "skills": [{
-            "name": "JS Frontend",
+            "name": "Web Development",
             "level": "Advanced",
             "keywords": [
-                "Vanilla",
-                "JQuery"
-            ]
-        },
-        {
-            "name": "PHP Backend",
-            "level": "Intermediate",
-            "keywords": [
-                "5.6"
+                "HTML",
+                "CSS",
+				"JS",
+				"PHP",
+				"AWS"
             ]
         },
         {
             "name": "Data Base",
-            "level": "Advanced",
+            "level": "Intermediate",
             "keywords": [
                 "Oracle",
                 "SQL Server",
-                "MySQL",
                 "PostgreSQL",
                 "MongoDB"
-            ]
-        },
-        {
-            "name": "C# Backend",
-            "level": "Beginner",
-            "keywords": [
-                "Asp .Net",
-                "Asp .Net Core"
             ]
         }
     ],
@@ -184,6 +181,30 @@
             "fluency": "Beginner"
         }
     ],
-	"interests": [],
-	"references": []
+	"interests": [{
+		"name": "Games",
+		"keywords": [
+			"Unreal Engine",
+			"Unity"
+		]
+	},
+	{
+		"name": "Music",
+		"keywords": [
+			"Protools",
+			"CuBase"
+		]
+	},
+	{
+		"name": "JS Frameworks",
+		"keywords": [
+			"Angular",
+			"React",
+			"Vue"
+		]
+	}],
+	"references": [{
+		"name": "Erlich Bachman",
+		"reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+	}]
 }
