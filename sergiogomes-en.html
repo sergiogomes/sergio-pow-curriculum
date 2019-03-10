@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui"/>
+    
+    <title>Sérgio Paulo Ferreira Gomes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+        
+        body {
+            background: #fff;
+            font-family: Lato, sans-serif;
+            margin: 0 0 80px;
+        }
+        
+        a {
+            color: #2ecc71;
+        }
+        
+        a:focus,
+        a:hover {
+            color: #eb5f51;
+            text-decoration: none;
+        }
+        
+        p {
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        p + p {
+            margin-top: 10px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+        }
+        
+        section {
+            margin-top: 30px;
+        }
+        
+        li {
+            line-height: 1.8;
+            list-style: none;
+        }
+        
+        li:before {
+            content: "\f052";
+            float: left;
+            font: 13px Octicons;
+            margin-top: 6px;
+            margin-left: -20px;
+            opacity: 0.1;
+            position: absolute;
+        }
+        
+        img {
+            width: 20%;
+            border-radius: 10%;
+        }
+        
+        .img-work {
+            width: 100%;
+            border-radius: 5%;
+            max-width: 125px;
+        }
+        
+        .sinqia-bg {
+            background-color: #fa4616;
+        }
+        
+        .ads-bg {
+            background-color: #343434;
+        }
+        
+        .casul-bg {
+            background-color: black;
+        }
+        
+        .fl-bg {
+            background-color: #191c1e;
+        }
+        
+        .padding-15 {
+            padding: 15px;
+        }
+        
+        .max-height-80 {
+            max-height: 80px;
+        }
+        
+        blockquote {
+            border-left: 5px solid #e7e9ec;
+            font-size: 14px;
+        }
+        
+        em {
+            color: #95a5a6;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        h4 span:first-child {
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .container {
+            /*max-width: 750px;*/
+            padding: 0 30px;
+        }
+        
+        .col-sm-6 {
+            margin-bottom: 10px;
+        }
+        
+        .col-sm-12 h4 {
+            margin-top: 12px;
+        }
+        
+        .col-sm-12 + .col-sm-12 {
+            margin-top: 30px;
+        }
+        
+        #header {
+            background: #f4f6f6;
+            padding: 50px 0;
+            margin-bottom: 30px;
+        }
+        
+        #header h2 {
+            color: #95a5a6;
+            font-size: 24px;
+        }
+        
+        #content h3 {
+            color: #eb5f51;
+            font-size: 26px;
+            margin-top: -4px;
+        }
+        
+        #content aside {
+            text-align: right;
+            padding-right: 30px;
+        }
+        
+        #profiles .network {
+            text-transform: capitalize;
+        }
+        
+        #work .position,
+        #volunteer .position {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        #education .area {
+            font-weight: bold;
+        }
+        
+        #education .area:before {
+            content: "\f0d7";
+            font: 16px Octicons;
+            margin-right: 6px;
+        }
+        
+        #education .studyType {
+            margin-left: 25px;
+        }
+        
+        #awards .summary,
+        #publications .summary {
+            margin-top: 8px;
+        }
+        
+        #publications .website a:before {
+            content: attr(href);
+        }
+        
+        /* Skill chart */
+        
+        .level {
+            margin-bottom: 0.5em;
+        }
+        
+        .level .bar {
+            border: 1px solid #ddd;
+            display: block;
+            width: 10em;
+            height: 5px;
+            position: relative;
+        }
+        
+        .level .bar::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            background: black;
+            height: 5px;
+        }
+        
+        .level.beginner .bar::after {
+            background: #eb5f51;
+            width: 2.5em;
+        }
+        
+        .level.intermediate .bar::after {
+            background: #ffdf1f;
+            width: 5em;
+        }
+        
+        .level.advanced .bar::after,
+        .level.fluent .bar::after {
+            background: #5cb85c;
+            width: 7.5em;
+        }
+        
+        .level.master .bar::after,
+        .level.native.speaker .bar::after {
+            background: #59c596;
+            width: 10em;
+        }
+        
+        @media (min-width: 480px) {
+            .strike-through {
+                border-top: 1px solid #f4f6f6;
+                height: 20px;
+                margin-top: 12px;
+                margin-bottom: -2px;
+                position: relative;
+            }
+            
+            .strike-through span,
+            .strike-through a {
+                background: #fff;
+                position: absolute;
+            }
+            
+            .strike-through span:first-child {
+                padding-right: 20px;
+                margin-top: -12px;
+            }
+            
+            .strike-through span + span {
+                font-size: 14px;
+                margin-top: -10px;
+                padding-left: 20px;
+                right: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .col-sm-6:last-child {
+                margin-bottom: 0px;
+            }
+            
+            #content aside {
+                margin-bottom: 20px;
+                padding-right: 0;
+                text-align: left;
+            }
+            
+            #publications .website a:before {
+                content: "View publication";
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+            
+            .date {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            
+            .strike-through span:first-child {
+                margin-bottom: 7px;
+            }
+            
+            .strike-through span {
+                display: block;
+            }
+            
+            #header {
+                margin-bottom: 10px;
+                padding: 40px 0;
+            }
+            
+            #actions {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-sm-push-3">
+                    <h1>Sérgio Paulo Ferreira Gomes</h1>
+                    <h2>Web Developer</h2>
+                    <img
+                    class="picture"
+                    src="https://avatars0.githubusercontent.com/u/5064727?s=400&amp;v=4"
+                    alt="Sérgio Paulo Ferreira Gomes"
+                    />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="container">
+        <section id="contact" class="row">
+            <aside class="col-sm-3"><h3>Contact</h3></aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <strong>Email</strong>
+                        <div class="email">sergiopgomes92@gmail.com</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <strong>Phone</strong>
+                        <div class="phone">+55 (31) 9 8733-9600</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <strong>Website</strong>
+                        <div class="website">
+                            <a href="https://www.behance.net/sergiopgomdf7c"
+                            >https://www.behance.net/sergiopgomdf7c</a
+                            >
+                        </div>
+                    </div>
+                    <!--
+                        <div class="col-sm-6">
+                            <strong>Marital status</strong>
+                            <div class="marital-status">Married</div>
+                        </div>
+                        <div class="col-sm-12">
+                            <strong>Address</strong>
+                            <div>
+                                <span class="fa fa-map-marker"></span>
+                                <span class="address">
+                                    135 Americo Campolina Rezende St, N 301
+                                </span>
+                                <span class="region">
+                                    Fernão Dias
+                                </span>
+                                <span class="city">
+                                    Belo Horizonte
+                                </span>
+                            </div>
+                        </div>
+                    -->
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="row">
+            <aside class="col-sm-3"><h3>About</h3></aside>
+            <div class="col-sm-9">
+                <p>
+                    I really like to start new projects, new technologies,
+                    new people.
+                </p>
+                <p>
+                    I like to contribute and add value to the company. I
+                    like to grow professionally.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="skills" class="row">
+            <aside class="col-sm-3"><h3>Skills</h3></aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <h4>Javascript</h4>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level advanced">
+                                <em>Advanced</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Vanilla</li>
+                            <li>JQuery</li>
+                            <li>Angular</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level intermediate">
+                                <em>Intermediate</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Cordova</li>
+                            <li>Aurelia</li>
+                            <li>React</li>
+                            <li>Vue</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level beginner">
+                                <em>Beginner</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Backbone</li>
+                            <li>Node</li>
+                            <li>Jasonette</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="row">
+                    <h4>CSS</h4>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level advanced">
+                                <em>Advanced</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level intermediate">
+                                <em>Intermediate</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Material Design</li>
+                            <li>MDB</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level beginner">
+                                <em>Beginner</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>SCSS</li>
+                            <li>Bulma</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="row">
+                    <h4>PHP</h4>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level intermediate">
+                                <em>Intermediate</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>PHP 5</li>
+                            <li>PHP 7</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="row">
+                    <h4>C#</h4>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level advanced">
+                                <em>Advanced</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Asp .Net Core</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level beginner">
+                                <em>Beginner</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Asp .Net</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="row">
+                    <h4>Data Base</h4>
+                    <div class="col-sm-4">
+                        <div class="name">
+                            <div class="level advanced">
+                                <em>Advanced</em>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <ul class="keywords">
+                            <li>Oracle</li>
+                            <li>SQL Server</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="level intermediate">
+                            <em>Intermediate</em>
+                            <div class="bar"></div>
+                        </div>
+                        <ul class="keywords">
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="languages" class="row">
+            <aside class="col-sm-3"><h3>Languages</h3></aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="language">
+                            <strong>Portuguese</strong>
+                        </div>
+                        <div class="fluency level master">
+                            <em>Native speaker</em>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="language"><strong>English</strong></div>
+                        <div class="fluency level advanced">
+                            <em>Advanced</em>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="language"><strong>Spanish</strong></div>
+                        <div class="fluency level beginner">
+                            <em>Beginner</em>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="work" class="row">
+            <div class="row">
+                <aside class="col-sm-3">
+                    <h3>Work</h3>
+                    <br>
+                    <img class="img-work sinqia-bg padding-15" src="img/logo-sinqia.png" alt="Sinqia"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Sinqia</span>
+                                <span class="date">
+                                    2019-02-28 —
+                                    <em class="present-day">Present Day</em>
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://www.sinqia.com.br/">https://www.sinqia.com.br/</a>
+                            </div>
+                            <div class="position">Web Developer</div>
+                            <div class="summary">
+                                <p>
+                                    Sinqia - We make the financial system pulse
+                                </p>
+                                <p>
+                                    ADSPrev was acquired and incorporated into Sinqia. 
+                                    Now we need to work on the integration between the teams and the construction of a new unified system according to the new identity of the company.
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Angular</li>
+                                    <li class="bullet">Microsoft TFS</li>
+                                    <li class="bullet">Ionic</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">C#</li>
+                                    <li class="bullet">Oracle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work ads-bg padding-15" src="img/logo-ads.png" alt="ADSPrev"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>ADSPrev</span>
+                                <span class="date">
+                                    2018-11-19 — 2019-02-28
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="http://www.adsprev.com.br/"
+                                >http://www.adsprev.com.br/</a
+                                >
+                            </div>
+                            <div class="position">Web Developer</div>
+                            <div class="summary">
+                                <p>
+                                    ADSPrev - System Administration and Development
+                                </p>
+                                <p>
+                                    I work with automation and communication systems and platforms in the private pension sector. 
+                                    Every system is customized for our customers. However we always work on the componetization and reuse of code.
+                                    Some of our clients are: Volkswagen - Aceprev - Previlan - CRM Forluz - Gerdau
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Angular</li>
+                                    <li class="bullet">Microsoft TFS</li>
+                                    <li class="bullet">Ionic</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">C#</li>
+                                    <li class="bullet">Oracle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work" src="img/logo-odhen.png" alt="Odhen"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Odhen</span>
+                                <span class="date">
+                                    2017-12-05 — 2018-11-16
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="http://ead.odhen.com/"
+                                >http://ead.odhen.com/</a
+                                >
+                            </div>
+                            <div class="position">Team Leader</div>
+                            <div class="summary">
+                                <p>
+                                    Odhen - Commercial automation
+                                </p>
+                                <p>
+                                    We are creating a new department, and it is
+                                    part of my job to maintain the climate and
+                                    the pleasant environment, enabling a good
+                                    development of the new systems. I take care
+                                    of the management of all personnel,
+                                    equipment, tools, and division of tasks
+                                    within the sprints. The system itself is
+                                    built on the Zeedhi framework, with
+                                    integrations with python printers, Oracle
+                                    database, PostgreSQL and MongoDB, and rows
+                                    in Apollo.
+                                </p>
+                                <p>
+                                    The systems that we build, works the automation of POS inside fuel stations, 
+                                    integrating with the fuel pumps, convenience store, and the matrix and the other branches of our clients.
+                                </p>
+                                <p>
+                                    We also developed the POS for the retail industry. The challenge was to work on the grid stock.
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">SH scripts</li>
+                                    <li class="bullet">PostgreSQL</li>
+                                    <li class="bullet">MongoDB</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Python</li>
+                                    <li class="bullet">Apollo Queue</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work" src="img/logo-pebbian.png" alt="Pebbian"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Pebbian</span>
+                                <span class="date">
+                                    2016-08-01 — 2017-12-05
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="http://ead.pebbian.com/"
+                                >http://ead.pebbian.com/</a
+                                >
+                            </div>
+                            <div class="position">Systems Analyst</div>
+                            <div class="summary">
+                                <p>
+                                    Pebbian - Business management
+                                </p>
+                                <p>
+                                    I lead a team of developers in converting
+                                    delphi systems to the new web platform built
+                                    on the Zeedhi framework. I was responsible
+                                    for all the management of tasks and
+                                    resources. We've also posted some apps
+                                    on the Apple Store and Google Play.
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Zeedhi Framework</li>
+                                    <li class="bullet">PHP</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">
+                                        ERP Conversion System
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work casul-bg" src="img/logo-casul.svg" alt="Casul"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>CASUL</span>
+                                <span class="date">
+                                    2014-06-28 —
+                                    <em class="present-day">Present Day</em>
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://casuldev.com/">https://casuldev.com/</a>
+                            </div>
+                            <div class="position">
+                                Co Founder and Business Analist
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    CASUL - Desenvolvimento de Sistemas, Aplicativos e Jogos
+                                </p>
+                                <p>
+                                    CASUL was created by a group of friends
+                                    interested in the development high quality
+                                    projects: "Simplifying your idea is our
+                                    business! Games and Softwares made with
+                                    excellence and high quality that only CASUL
+                                    can deliver!"
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-12">
+                                <div class="col-sm-6">
+                                    <ul class="highlights">
+                                        <li class="bullet">Unreal Engine</li>
+                                        <li class="bullet">Unity</li>
+                                        <li class="bullet">Phaser</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="highlights">
+                                        <li class="bullet">Asp.Net Core</li>
+                                        <li class="bullet">JS</li>
+                                        <li class="bullet">CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4>Main Product</h4>
+                            <div class="website pull-right">
+                                <a href="https://huppel.io/">https://huppel.io/</a>
+                            </div>
+                            <div class="position">
+                                Huppel
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    Huppel is a solution developed by Casul for transports and freights management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work" src="img/logo-tek.png" alt="Teknisa Software"/>
+                </aside>
+                
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Teknisa Software</span>
+                                <span class="date">
+                                    2011-08-05 — 2016-08-01
+                                </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://www.teknisa.com/">https://www.teknisa.com/</a>
+                            </div>
+                            <div class="position">Programmer</div>
+                            <div class="summary">
+                                <p>
+                                    Teknisa Software - Softwares and apps for smarter management
+                                </p>
+                                <p>
+                                    I have worked in a delphi development
+                                    environment building several client-server
+                                    applications and building and converting
+                                    queries and procedures on Oracle and SQL
+                                    server. I also had to give suport and bug
+                                    fixes to the applications. Improve it and
+                                    customize it for some clients, wich
+                                    interview and requirements gathering was
+                                    needed.
+                                </p>
+                                <p>
+                                    The modules that I worked with, was the production and quality of pharmaceutical, chemical and even food industries. 
+                                    And it integrated with the other modules of orders and expedition. 
+                                    These four modules in which I worked, are part of the great erp of teknisa.
+                                    Mastering the business rule was crucial to development.
+                                    Some of our clients: Pharmascience, Lab. Globo, Emfal, Indalabor, Gália, Madero, Risotolandia.
+                                </p>
+                            </div>
+                            <h4>Highlights</h4>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Delphi environment</li>
+                                    <li class="bullet">Oracle</li>
+                                    <li class="bullet">SQL Server</li>
+                                    <li class="bullet">Support</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="highlights">
+                                    <li class="bullet">Bug fixes</li>
+                                    <li class="bullet">Implementations</li>
+                                    <li class="bullet">Customizations</li>
+                                    <li class="bullet">Requirements Gathering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="education" class="row">
+            <aside class="col-sm-3">
+                <h3>Education</h3>
+                <br>
+                <img class="img-work" src="img/logo-newton.png" alt="Newton Paiva"/>
+            </aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="strike-through">
+                            <span>Newton Paiva University</span>
+                            <span class="date">
+                                2014-02-01 — 2015-06-25
+                            </span>
+                        </h4>
+                        <div class="website pull-right">
+                            <a href="https://www.newtonpaiva.br/pos-graduacao">https://www.newtonpaiva.br/pos-graduacao</a>
+                        </div>
+                        <div class="area">MBA Project Management</div>
+                        <div class="studyType">MBA</div>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="strike-through">
+                            <span>Newton Paiva University</span>
+                            <span class="date">
+                                2010-02-12 — 2013-12-31
+                            </span>
+                        </h4>
+                        <div class="website pull-right">
+                            <a href="https://www.newtonpaiva.br/">https://www.newtonpaiva.br/</a>
+                        </div>
+                        <div class="area">Information Technology</div>
+                        <div class="studyType">Bachelor</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="events" class="row">
+            <div class="row">
+                <aside class="col-sm-3">
+                    <h3>Events</h3>
+                    <br>
+                    <img class="img-work" src="img/logo-campus.png" alt="Campus Party Brasil 12"/>
+                </aside>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Campus Party Brasil 12</span>
+                                <span class="date"> 2019-02-12 - 2019-02-17</span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://brasil.campus-party.org/">https://brasil.campus-party.org/</a>
+                            </div>
+                            <div class="publisher">
+                                <em>Sponsors</em>
+                                <strong>Prefeitura São Paulo, Use, Ford, Visa, Liberty Seguros, etc </strong>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    The Campus Party Brazil is the main technological event held annually in Brazil. It covers the most diverse topics related to the Internet, bringing together a large number of communities and users of the worldwide computer network involved with technology and digital culture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work fl-bg padding-15" src="img/logo-fl.png" alt="React Conf Brasil 2018"/>
+                </aside>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Fórmula de Lançamento</span>
+                                <span class="date"> 2018-11-30 - 2018-12-02</span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="http://formuladelancamento.com.br/">http://formuladelancamento.com.br/</a>
+                            </div>
+                            <div class="publisher">
+                                <em>Sponsors</em>
+                                <strong>Ignição Digital</strong>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    FL is a 100% online training in digital marketing, which you can do from anywhere that has an internet connection.
+                                    It is millimetrically thought for those who have a simple goal: billing more than 6 digits ($ 100,000) in 7 consecutive days, one week.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work" src="img/logo-react.png" alt="React Conf Brasil 2018"/>
+                </aside>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>React Conf Brasil</span>
+                                <span class="date"> 2018-10-20 </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://reactconf.com.br/">https://reactconf.com.br/</a>
+                            </div>
+                            <div class="publisher">
+                                <em>Sponsors</em>
+                                <strong>React Brasil</strong>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    The largest conference of the React ecosystem in Latin America. 
+                                    As at conferences in the United States and Europe, we have brought together developers, companies, and technology students to share experiences in the development of reactive applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work" src="img/logo-devfest.png" alt="DEVFEST"/>
+                </aside>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>DevFest BH</span>
+                                <span class="date"> 2017-11-18 </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://www.devfestbh.com/">https://www.devfestbh.com/</a>
+                            </div>
+                            <div class="publisher">
+                                <em>Sponsors</em>
+                                <strong>Google</strong>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    DevFest BH is an event organized by GDG Belo Horizonte, offering activities related to technology, innovation, entrepreneurship and many other subjects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <aside class="col-sm-3">
+                    <img class="img-work max-height-80" src="img/logo-node.svg" alt="Newton Paiva"/>
+                </aside>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="strike-through">
+                                <span>Node Conf Brasil</span>
+                                <span class="date"> 2016-07-04 - 2016-07-05 </span>
+                            </h4>
+                            <div class="website pull-right">
+                                <a href="https://brazil.nodeconf.com/">https://brazil.nodeconf.com/</a>
+                            </div>
+                            <div class="publisher">
+                                <em>Sponsors</em>
+                                <strong>Sprinklr, Scup, UolHost, Vizir, Scalable Path and Wisepix</strong>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    This was the first edition of NodeConf in Latin America and was also the first major event focused exclusively on Node.js of Brazil. 
+                                    We've had an amazing experience in São Paulo on 2 days filled with large lectures and a lot of surprises.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="publications" class="row">
+            <aside class="col-sm-3">
+                <h3>Publications</h3>
+                <br>
+                <img class="img-work" src="img/logo-newton.png" alt="Newton Paiva"/>
+            </aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="strike-through">
+                            <span
+                            >Oracle and SQL Server stored
+                            procedures</span
+                            >
+                            <span class="date"> 2013-10-01 </span>
+                        </h4>
+                        
+                        <div class="publisher">
+                            <em>Published by</em>
+                            <strong>Newton Paiva</strong>
+                        </div>
+                        <div class="summary">
+                            <p>
+                                The advantages and disadvantages of having
+                                the business rule of the application in
+                                stored procedures, in the database, and the
+                                differences between Oracle and SQL Server.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="profiles" class="row">
+            <aside class="col-sm-3"><h3>Profiles</h3></aside>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <strong class="network"> Twitter </strong>
+                        <div class="username">
+                            <div class="url">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <a href="https://twitter.com/Sergio_Pow">Sergio_Pow</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <strong class="network"> Facebook </strong>
+                        <div class="username">
+                            <div class="url">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <a href="https://www.facebook.com/sergiopow.gomes">sergiopow.gomes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <strong class="network"> Instagram </strong>
+                        <div class="username">
+                            <div class="url">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <a href="https://www.instagram.com/sergio_pow/">sergio_pow</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <strong class="network"> Github </strong>
+                        <div class="username">
+                            <div class="url">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                <a href="https://github.com/sergiogomes">sergiogomes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <strong class="network"> linkedin </strong>
+                        <div class="username">
+                            <div class="url">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/in/s%C3%A9rgio-pow-gomes-09484b7b/">Sérgio Pow Gomes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

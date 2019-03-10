@@ -1,0 +1,1138 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Sérgio Paulo Ferreira Gomes</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.46153846;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.3em;
+}
+
+.highlights>li>p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.67rem;
+}
+
+h3 {
+    font-size: 1.27rem;
+}
+
+em {
+    color: #757575;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* main container */
+
+#resume {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* every section wrapper */
+
+.section {
+    margin-bottom: 1rem;
+}
+
+section .location {
+    margin-right: .5em;
+    color: #606d76;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: .5rem;
+}
+
+#profiles .item {
+    padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+#header>div {
+    line-height: 1.5;
+}
+
+#header>div>div {
+    margin-right: 1.2em;
+}
+
+#header h1.name {
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+#header h2.label {
+    color: #202931;
+    font-size: 1.47rem;
+    font-weight: 300;
+}
+
+#header .picture {
+    width: 11em;
+    float: right;
+    border-radius: 4px;
+}
+
+.main-summary {
+    background: #f1f8ff;
+    padding: 1.2em 1em;
+    margin-top: 1rem;
+}
+
+.main-summary p {
+    margin: .15em 0 0;
+}
+
+h2.section-title {
+    display: inline-block;
+    background: #fff;
+    padding: 0 1em 0.3em 0;
+    color: #ff6d1f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.section>header {
+    position: relative;
+}
+
+.fa {
+    margin-right: 0.25em;
+}
+
+.section>header::after {
+    position: absolute;
+    left: 0;
+    top: .7em;
+    height: 1px;
+    background: #ccc;
+    content: "";
+    width: 100%;
+    z-index: -100;
+    display: block;
+}
+
+.section.main-summary>section {
+    margin: 0;
+}
+
+.section>section>header {
+    font-size: 1.38rem;
+    position: relative;
+    margin-top: .7em;
+}
+
+.section>section>header:first-of-type {
+    margin: 0;
+}
+
+.section>section>header .space-left {
+    position: absolute;
+    left: -1.56rem;
+    top: 5px;
+    color: #aaa;
+    line-height: 1;
+    opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+    display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+    font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+    content: "at "
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+    color: #606d76;
+    font-weight: 400;
+}
+
+.section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+ul.keywords,
+ul.courses {
+    margin-top: .5em;
+}
+
+ul.keywords li,
+ul.courses li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap;
+}
+
+ul.keywords li:hover,
+ul.courses li:hover {
+    background: #dfeaf0;
+}
+
+.item {
+    padding: .5em 0;
+}
+
+.gpa {
+    padding-bottom: .5em;
+}
+
+.fa.social {
+    font-size: 1.1em;
+}
+
+
+/* Social Media Brand Colors */
+
+.google-plus {
+    color: #dd4b39;
+}
+
+.tumblr {
+    color: #32506d;
+}
+
+.foursquare {
+    color: #0072b1;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.pinterest {
+    color: #cb2027;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.instagram {
+    color: #517fa4;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.soundcloud {
+    color: #ff3a00;
+}
+
+.wordpress {
+    color: #21759b;
+}
+
+.youtube {
+    color: #bb0000;
+}
+
+.github {
+    color: #171515;
+}
+
+.stack-overflow {
+    color: #828386;
+    position: relative;
+}
+
+.flickr {
+    color: #ff0084;
+}
+
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: '\f16c';
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%;
+}
+
+.telegram {
+    color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+    width: 15em;
+    padding: 0 .5em .5em 0;
+    border-bottom: none;
+}
+
+#skills .item {
+    width: 16em;
+}
+
+#skills .item .keywords {
+    width: 15em;
+}
+
+
+/* Skill chart */
+
+.level {
+    margin-bottom: .5em;
+}
+
+.level .bar {
+    border: 1px solid #ddd;
+    display: block;
+    width: 10em;
+    height: 5px;
+    position: relative;
+}
+
+.level .bar::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background: black;
+    height: 5px;
+}
+
+.level.beginner .bar::after {
+    background: #EB5F51;
+    width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+    background: #ffdf1f;
+    width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+    background: #5CB85C;
+    width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+    background: #59C596;
+    width: 10em;
+}
+
+#references .item {
+    padding-left: .5em;
+    border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  visibility: hidden;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display {
+    display: block;
+    opacity: 1 !important;
+}
+
+.margin1 {
+    margin-bottom: .5rem;
+}
+
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+    #resume {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
+    }
+}
+
+@media print {
+    #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+    }
+    @page {
+        margin: 1cm 1.4cm;
+    }
+    .item-count {
+        display: none;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "at ";
+    }
+    .main-summary {
+        padding: 2rem 0;
+    }
+    .section {
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .section header {
+        padding-bottom: .15rem;
+    }
+    .section .location {
+        padding-bottom: .15rem;
+    }
+    .stack-overflow::after {
+        content: "";
+    }
+    .fa.social {
+        color: #828386;
+    }
+    ul {
+        margin-top: .4em;
+    }
+    ul,
+    li {
+        padding: 0;
+    }
+    ul.keywords li,
+    ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+    }
+    ul.keywords li::after,
+    ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+    }
+    ul.keywords::before,
+    ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    ul.keywords::before {
+        content: "Skills acquired: ";
+    }
+    #skills .keywords::before {
+        content: '';
+    }
+    .section p {
+        margin: 0;
+        padding: 0;
+    }
+}
+	</style>
+	
+	
+</head>
+<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Sérgio Paulo Ferreira Gomes
+					</h1>
+					<h2>
+						Web Developer
+					</h2>
+					<img class="picture" src="https://avatars0.githubusercontent.com/u/5064727?s=400&amp;v=4" alt="Sérgio Paulo Ferreira Gomes">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+		
+		<section id="contact" class="row">
+			<aside class="col-sm-3">
+				<h3>Contact</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-6">
+						<strong>Email</strong>
+						<div class="email">sergiopgomes92@gmail.com</div>
+					</div>
+					<div class="col-sm-6">
+						<strong>Phone</strong>
+						<div class="phone">+55 (31) 98733-9600</div>
+					</div>
+					<div class="col-sm-6">
+						<strong>Website</strong>
+						<div class="website">
+							<a href="https://www.behance.net/sergiopgomdf7c">https://www.behance.net/sergiopgomdf7c</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="row">
+			<aside class="col-sm-3">
+				<h3>About</h3>
+			</aside>
+			<div class="col-sm-9">
+				<p>Acting in the area of information systems, where the application and use of knowledge are requirements and can be used to aggregate values both for the company and for personal and professional development.</p>
+			</div>
+		</section>
+		<section id="skills" class="row">
+			<aside class="col-sm-3">
+				<h3>Skills</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="name">
+							<h4>JS Frontend</h4>
+						</div>
+						<ul class="keywords">
+							<li>Vanilla</li>
+							<li>JQuery</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4>PHP Backend</h4>
+						</div>
+						<ul class="keywords">
+							<li>5.6</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4>Data Base</h4>
+						</div>
+						<ul class="keywords">
+							<li>Oracle</li>
+							<li>SQL Server</li>
+							<li>MySQL</li>
+							<li>PostgreSQL</li>
+							<li>MongoDB</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4>C# Backend</h4>
+						</div>
+						<ul class="keywords">
+							<li>Asp .Net</li>
+							<li>Asp .Net Core</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="languages" class="row">
+			<aside class="col-sm-3">
+				<h3>Languages</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="language">
+							<strong>Portuguese</strong>
+						</div>
+						<div class="fluency level master">
+							<em>Native speaker</em>
+							<div class="bar"></div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="language">
+							<strong>English</strong>
+						</div>
+						<div class="fluency level advanced">
+							<em>Advanced</em>
+							<div class="bar"></div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="language">
+							<strong>Spanish</strong>
+						</div>
+						<div class="fluency level beginner">
+							<em>Beginner</em>
+							<div class="bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="work" class="row">
+			<aside class="col-sm-3">
+				<h3>Work</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Odhen</span>
+							<span class="date">
+								2017-12-05 — Until Now
+							</span>
+						</h4>
+						<div class="website pull-right">
+							<a href="http://ead.odhen.com/">http://ead.odhen.com/</a>
+						</div>
+						<div class="position">
+							Team Manager
+						</div>
+						<div class="summary">
+							<p>We are creating a new department, and it is part of my job to maintain the climate and the pleasant environment, enabling a good development of the new systems. I take care of the management of all personnel, equipment, tools, and division of tasks within the sprints. The system itself is built on the Zeedhi framework, with integrations with python printers, Oracle database, PostgreSQL and MongoDB, and rows in Apollo.</p>
+						</div>
+						<h4>Highlights</h4>
+						<ul class="highlights">
+							<li class="bullet">SH scripts</li>
+							<li class="bullet">PostgreSQL</li>
+							<li class="bullet">MongoDB</li>
+							<li class="bullet">Python</li>
+							<li class="bullet">Apollo Queue</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Pebbian</span>
+							<span class="date">
+								2016-08-01 — 2017-12-05
+							</span>
+						</h4>
+						<div class="website pull-right">
+							<a href="http://ead.pebbian.com/">http://ead.pebbian.com/</a>
+						</div>
+						<div class="position">
+							Systems Analyst
+						</div>
+						<div class="summary">
+							<p>I lead a team of developers in converting delphi systems to the new web platform built on the Zeedhi framework. I was responsible for all the management of tasks and resources. We&#x27;ve also posted some apps on the Apple Store and Google Play.</p>
+						</div>
+						<h4>Highlights</h4>
+						<ul class="highlights">
+							<li class="bullet">Zeedhi Framework</li>
+							<li class="bullet">PHP</li>
+							<li class="bullet">ERP Conversion System</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>CASUL</span>
+							<span class="date">
+								2014-06-28 — 
+							</span>
+						</h4>
+						<div class="website pull-right">
+							<a href="https://casuldev.com/">https://casuldev.com/</a>
+						</div>
+						<div class="position">
+							Co Founder and Web Analist
+						</div>
+						<div class="summary">
+							<p>CASUL was created by a group of friends interested in the development high quality projects: &#x27;Simplifying your idea is our business! Games and Softwares made with excellence and high quality that only CASUL can deliver!&#x27;</p>
+						</div>
+						<h4>Highlights</h4>
+						<ul class="highlights">
+							<li class="bullet">Unreal Engine</li>
+							<li class="bullet">Unity</li>
+							<li class="bullet">Phaser</li>
+							<li class="bullet">JS</li>
+							<li class="bullet">CSS</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Teknisa Software</span>
+							<span class="date">
+								2011-08-05 — 2016-08-01
+							</span>
+						</h4>
+						<div class="website pull-right">
+							<a href="https://www.teknisa.com/">https://www.teknisa.com/</a>
+						</div>
+						<div class="position">
+							Programmer
+						</div>
+						<div class="summary">
+							<p>I have worked in a delphi development environment building several client-server applications and building and converting queries and procedures on Oracle and SQL server. I also had to give suport and bug fixes to the applications. Improve it and customize it for some clients, wich interview and requirements gathering was needed.</p>
+						</div>
+						<h4>Highlights</h4>
+						<ul class="highlights">
+							<li class="bullet">Delphi environment</li>
+							<li class="bullet">Oracle</li>
+							<li class="bullet">SQL Server</li>
+							<li class="bullet">Support</li>
+							<li class="bullet">Bug fixes</li>
+							<li class="bullet">Implementations</li>
+							<li class="bullet">Customizations</li>
+							<li class="bullet">Requirements Gathering</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="education" class="row">
+			<aside class="col-sm-3">
+				<h3>Education</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Newton Paiva University</span>
+							<span class="date">
+								2014-02-01 — 2015-06-25
+							</span>
+						</h4>
+						<div class="area">
+							MBA Project Management
+						</div>
+						<div class="studyType">
+							MBA
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Newton Paiva University</span>
+							<span class="date">
+								2010-02-12 — 2013-12-31
+							</span>
+						</h4>
+						<div class="area">
+							Information Technology
+						</div>
+						<div class="studyType">
+							Bachelor
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="publications" class="row">
+			<aside class="col-sm-3">
+				<h3>Publications</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4 class="strike-through">
+							<span>Oracle and SQL Server stored procedures</span>
+							<span class="date">
+								2013-10-01
+							</span>
+						</h4>
+						<div class="website pull-right">
+							<a href=""></a>
+						</div>
+						<div class="publisher">
+							<em>Published by</em>
+							<strong>Newton Paiva</strong>
+						</div>
+						<div class="summary">
+							<p>The advantages and disadvantages of having the business rule of the application in stored procedures, in the database, and the differences between Oracle and SQL Server.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="profiles" class="row">
+			<aside class="col-sm-3">
+				<h3>Profiles</h3>
+			</aside>
+			<div class="col-sm-9">
+				<div class="row">
+					<div class="col-sm-6">
+						<strong class="network">
+							Twitter
+						</strong>
+						<div class="username">
+							<div class="url">
+								<a href="https://twitter.com/Sergio_Pow">Sergio_Pow</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<strong class="network">
+							Facebook
+						</strong>
+						<div class="username">
+							<div class="url">
+								<a href="https://www.facebook.com/sergiopow.gomes">sergiopow.gomes</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<strong class="network">
+							Instagram
+						</strong>
+						<div class="username">
+							<div class="url">
+								<a href="https://www.instagram.com/sergio_pow/">sergio_pow</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<strong class="network">
+							Github
+						</strong>
+						<div class="username">
+							<div class="url">
+								<a href="https://github.com/sergiogomes">sergiogomes</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<strong class="network">
+							linkedin
+						</strong>
+						<div class="username">
+							<div class="url">
+								<a href="https://www.linkedin.com/in/s%C3%A9rgio-pow-gomes-09484b7b/">Sérgio Pow Gomes</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+	
+</body>
+</html>
